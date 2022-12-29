@@ -1,0 +1,17 @@
+- defaults:
+    link:
+        relink: true
+
+- clean: ['~']
+
+- link:
+    ~/.profile: profile
+    ~/.bashrc: bashrc
+    ~/.bash_logout: bash_logout
+    ~/.gitconfig: gitconfig
+    ~/.tmux.conf: tmux.conf
+    ~/bin:
+        path: bin/
+        create: true
+    ~/.config/kitty/kitty.conf: kitty.conf
+    ~/.config/kitty/current-theme.conf: current-theme.conf 
