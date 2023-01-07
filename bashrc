@@ -125,8 +125,9 @@ source "$OSH"/oh-my-bash.sh
 # For a full list of active aliases, run `alias`.
 #
 # Example aliases
-alias bashconfig="code ~/.bashrc"
+alias bashconf="code ~/.bashrc"
 alias ohmybash="code ~/.oh-my-bash"
+alias kittyconf="code ~/.config/kitty/kitty.conf"
 
 # My Alias
 alias dev="cd ~/Documents/Dev"

@@ -1,6 +1,8 @@
 - defaults:
     link:
-        relink: true
+      relink: true
+      create: true
+      force: true
 
 - clean: ['~']
 
@@ -13,5 +15,11 @@
     ~/bin:
         path: bin/
         create: true
+    ~/.config/nvim:
+        path: nvim/
+        create: true
     ~/.config/kitty/kitty.conf: kitty.conf
-    ~/.config/kitty/current-theme.conf: current-theme.conf 
+    ~/.config/kitty/current-theme.conf: current-theme.conf
+
+- shell:
+    - [git submodule update --init --recursive, Installing submodules]
