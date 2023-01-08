@@ -1,3 +1,19 @@
+local configs = require "nvim-treesitter.parsers".get_parser_configs() 
+
+configs.c_sharp = {
+    install_info = {
+        url = "https://github.com/tree-sitter/tree-sitter-c-sharp",
+        files = {"src/parser.c", "src/scanner.c"}
+    }
+}
+
+configs.haskell = {
+  install_info = {
+    url = "https://github.com/tree-sitter/tree-sitter-haskell",
+    files = {"src/parser.c", "src/scanner.c"}
+  }
+}
+
 require('nvim-treesitter.configs').setup({
     ensure_installed = {"c_sharp", "haskell"},
     highlight = {
@@ -31,10 +47,3 @@ require('nvim-treesitter.configs').setup({
       -- termcolors = {} -- table of colour name strings
     },
   })
-
-require "nvim-treesitter.parsers".get_parser_configs().haskell = {
-  install_info = {
-    url = "~/.config/nvim/tree-sitter-haskell",
-    files = {"src/parser.c", "src/scanner.c"}
-  }
-}

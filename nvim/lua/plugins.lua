@@ -71,6 +71,7 @@ use({
 })
 
 use {'neoclide/coc.nvim', branch = 'release'}
+--use {'OmniSharp/omnisharp-vim', branch = 'master'}
 
 use({
   'voldikss/vim-floaterm',
