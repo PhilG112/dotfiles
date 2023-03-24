@@ -1,3 +1,9 @@
 [user]
 	name = Philg112
 	email = pgrujovski@protonmail.com
+[pull]
+	ff = only
+[cola]
+	spellcheck = false
+	theme = flat-light-green
+	icontheme = dark
