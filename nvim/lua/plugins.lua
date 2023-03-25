@@ -88,6 +88,11 @@ use({
     end,
 })
 
+use {
+    'windwp/nvim-autopairs',
+    config = function() require('nvim-autopairs').setup {} end
+}
+
 -- Automatically install plugins on first run
 if packer_bootstrap then
   require('packer').sync()

@@ -128,6 +128,8 @@ source "$OSH"/oh-my-bash.sh
 alias bashconf="code ~/.bashrc"
 alias ohmybash="code ~/.oh-my-bash"
 alias kittyconf="code ~/.config/kitty/kitty.conf"
+alias startredis="sudo systemctl start redis-server"
+alias startmongo="sudo systemctl start mongod"
 
 # My Alias
 alias dev="cd ~/Documents/Dev"
