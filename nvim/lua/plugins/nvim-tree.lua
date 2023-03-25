@@ -27,5 +27,6 @@ require('nvim-tree').setup({
     augroup end
   ]])
   
-  vim.keymap.set('n', '<leader>b', ':NvimTreeFindFileToggle<CR>')
+  vim.keymap.set('n', '<leader>[', ':NvimTreeFindFileToggle<CR>')
   vim.keymap.set('n', '<leader>n', ':NvimTreeFocus<CR>')
+  vim.keymap.set('n', '<leader>b', ':NvimTreeToggle<CR>')

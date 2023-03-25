@@ -56,7 +56,7 @@ use({
 })
 
 use {'p00f/nvim-ts-rainbow', branch = 'master'}
-
+use('christoomey/vim-tmux-navigator')
 use({
   'nvim-treesitter/nvim-treesitter',
   run = ':TSUpdate',

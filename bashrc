@@ -138,3 +138,6 @@ export PATH=/opt/nodejs_v18/bin:$PATH
 export PATH=/home/.local/bin:$PATH
 export PATH=/home/sylvo/.dotnet/tools:$PATH
 . "$HOME/.cargo/env"
+
+DISABLE_AUTO_TITLE=true
+unset PROPMT_COMMAND
