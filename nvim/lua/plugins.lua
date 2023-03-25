@@ -80,6 +80,14 @@ use({
   end,
 })
 
+-- statusline
+use({
+    'nvim-lualine/lualine.nvim',
+    config = function()
+        require('plugins.lualine')
+    end,
+})
+
 -- Automatically install plugins on first run
 if packer_bootstrap then
   require('packer').sync()
