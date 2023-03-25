@@ -27,7 +27,7 @@ telescope.setup({
         ['<C-Up>'] = actions.cycle_history_prev,
       },
     },
-    file_ignore_patterns = { '.git/', '.dotbot/', '.dist-newstyle/', '.cache/', '.build/', '.packagedb/', '.tmp/' },
+    file_ignore_patterns = { '.git/', '.dotbot/', '.dist-newstyle/', '.cache/', '.build/', '.packagedb/', '.tmp/', '.bin/', '.obj/', '.spago/', '.output/', '.node_modules/', '.dist/'},
   },
   pickers = {
     find_files = {

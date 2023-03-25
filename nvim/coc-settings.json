@@ -4,12 +4,19 @@
       "command": "haskell-language-server-wrapper",
       "args": ["--lsp"],
       "rootPatterns": ["*.cabal", "stack.yaml", "cabal.project", "package.yaml", "hie.yaml"],
-      "filetypes": ["hs", "haskell", "lhaskell"]
+      "filetypes": ["hs", "haskell", "lhaskell"],
+      "initializationOptions": {
+        "languageServerHaskell": {
+            "hlintOn": true,
+            "maxNumberOfProblems": 20,
+            "completionSnippetsOn": true
+        }
+      }
     },
     "purescript": {
       "command": "purescript-language-server",
       "args": ["--stdio"],
-      "filetypes": ["purescript"],
+      "filetypes": ["purescript", "purs"],
       "trace.server": "off",
       "rootPatterns": ["bower.json", "psc-package.json", "spago.dhall"],
       "settings": {
