@@ -46,12 +46,33 @@ use({
   end,
 })
 
+-- Theme related stuff
 use({
-  'rose-pine/neovim',
-  as = 'rose-pine',
-  config = function()
-      require('plugins.rose-pine')
-  end
+    'nvim-lualine/lualine.nvim',
+    config = function()
+        require('plugins.lualine')
+    end,
+})
+-- use({
+--   'rose-pine/neovim',
+--   as = 'rose-pine',
+--   config = function()
+--       require('plugins.rose-pine')
+--   end
+-- })
+
+use({
+    'folke/tokyonight.nvim',
+    config = function()
+        require('plugins.tokyonight')
+    end
+})
+
+use ({
+    'nyoom-engineering/oxocarbon.nvim',
+    config = function()
+        require('plugins.oxocarbon')
+    end
 })
 
 use {'p00f/nvim-ts-rainbow', branch = 'master'}
@@ -77,14 +98,6 @@ use({
   config = function()
     require('plugins.floaterm')
   end,
-})
-
--- statusline
-use({
-    'nvim-lualine/lualine.nvim',
-    config = function()
-        require('plugins.lualine')
-    end,
 })
 
 use {

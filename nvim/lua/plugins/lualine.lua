@@ -9,7 +9,7 @@ themee.insert.a.bg = '#2ce65d'
 
 lualine.setup({
     options = {
-        theme = themee
+        theme = 'tokyonight'
     }
 })
 
