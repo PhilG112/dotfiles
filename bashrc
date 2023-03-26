@@ -143,3 +143,5 @@ export PATH=/home/sylvo/.dotnet/tools:$PATH
 
 DISABLE_AUTO_TITLE=true
 unset PROPMT_COMMAND
+
+eval "$(direnv hook bash)"

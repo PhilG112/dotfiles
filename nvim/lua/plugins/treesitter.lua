@@ -14,8 +14,15 @@ configs.haskell = {
   }
 }
 
+configs.rust = {
+    install_info = {
+        url = "https://github.com/tree-sitter/tree-sitter-rust",
+        files = { "src/parser.c", "src/scanner.c" }
+    }
+}
+
 require('nvim-treesitter.configs').setup({
-    ensure_installed = {"c_sharp", "haskell"},
+    ensure_installed = {"c_sharp", "haskell", "rust", "lua", "javascript", "typescript"},
     highlight = {
       enable = true,
       disable = { 'NvimTree' },
