@@ -33,7 +33,6 @@ use({
     end,
   })
 
-
 use({
   'nvim-telescope/telescope.nvim',
   requires = {
@@ -70,7 +69,7 @@ use({
   end,
 })
 
-use {'neoclide/coc.nvim', branch = 'release'}
+-- use {'neoclide/coc.nvim', branch = 'release'}
 --use {'OmniSharp/omnisharp-vim', branch = 'master'}
 
 use({
@@ -90,8 +89,38 @@ use({
 
 use {
     'windwp/nvim-autopairs',
-    config = function() require('nvim-autopairs').setup {} end
+    config = function()
+        require('nvim-autopairs').setup {}
+    end,
 }
+
+use {
+  'VonHeikemen/lsp-zero.nvim',
+  branch = 'v1.x',
+  requires = {
+    -- LSP Support
+    {'neovim/nvim-lspconfig'},             -- Required
+    {'williamboman/mason.nvim'},           -- Optional
+    {'williamboman/mason-lspconfig.nvim'}, -- Optional
+
+    -- Autocompletion
+    {'hrsh7th/nvim-cmp'},         -- Required
+    {'hrsh7th/cmp-nvim-lsp'},     -- Required
+    {'hrsh7th/cmp-buffer'},       -- Optional
+    {'hrsh7th/cmp-path'},         -- Optional
+    {'saadparwaiz1/cmp_luasnip'}, -- Optional
+    {'hrsh7th/cmp-nvim-lua'},     -- Optional
+
+    -- Snippets
+    {'L3MON4D3/LuaSnip'},             -- Required
+    {'rafamadriz/friendly-snippets'}, -- Optional
+  },
+  config = function()
+      require('plugins.lsp')
+  end,
+}
+
+use {'tpope/vim-commentary', branch = 'master'}
 
 -- Automatically install plugins on first run
 if packer_bootstrap then
