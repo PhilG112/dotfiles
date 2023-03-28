@@ -134,6 +134,7 @@ use {
 }
 
 use {'tpope/vim-commentary', branch = 'master'}
+use {'purescript-contrib/purescript-vim', branch = 'main'}
 
 -- Automatically install plugins on first run
 if packer_bootstrap then
