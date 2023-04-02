@@ -8,7 +8,8 @@ lsp.ensure_installed({
     'rust_analyzer',
     'hls',
     'csharp_ls',
-    'purescriptls'
+    'purescriptls',
+    'rnix'
 })
 
 -- Fix Undefined global 'vim'
@@ -21,6 +22,12 @@ lsp.configure('lua-language-server', {
         }
     }
 })
+
+-- if vim.fn.executable('rnix-lsp') then
+--     require ('lspconfig').rnix.setup {
+--         cmd = { vim.o.shell, '-c', 'rnix-lsp' },
+--         fileTypes = {'nix'}
+--     }
 
 
 local cmp = require('cmp')
