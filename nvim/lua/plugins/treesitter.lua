@@ -21,6 +21,13 @@ configs.rust = {
     }
 }
 
+configs.nix = {
+    install_info = {
+        url = "https://github.com/nix-community/tree-sitter-nix",
+        files = { "src/parser.c", "src/scanner.c" }
+    }
+}
+
 require('nvim-treesitter.configs').setup({
     ensure_installed = {"c_sharp", "haskell", "rust", "lua", "javascript", "typescript"},
     highlight = {
