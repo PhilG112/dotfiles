@@ -1,0 +1,14 @@
+{
+    "defaultnix": {
+        "prefix": "defaultn",
+        "language": "nix",
+        "body": [
+            "let",
+            "\tpkgs = import <nixpkgs> {};",
+            "in",
+            "{",
+            "\thaysync = pkgs.haskellPackages.callPackage ./${1:filename}.nix {};",
+            "}"
+        ]
+    }
+}

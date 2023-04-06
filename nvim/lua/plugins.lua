@@ -90,6 +90,17 @@ use({
   end,
 })
 
+use({
+	"L3MON4D3/LuaSnip",
+	-- follow latest release.
+	tag = "v<CurrentMajor>.*",
+	-- install jsregexp (optional!:).
+	run = "make install_jsregexp",
+    config = function()
+        require("luasnip.loaders.from_vscode").load({paths="../code_snippets"})
+    end,
+})
+
 -- use {'neoclide/coc.nvim', branch = 'release'}
 --use {'OmniSharp/omnisharp-vim', branch = 'master'}
 

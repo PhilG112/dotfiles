@@ -31,4 +31,4 @@ export PATH="$PATH:/home/sylvo/.local/share/JetBrains/Toolbox/scripts"
 
 . "$HOME/.cargo/env"
 
-if [ -e /home/sylvo/.nix-profile/etc/profile.d/nix.sh ]; then . /home/sylvo/.nix-profile/etc/profile.d/nix.sh; fi # added by Nix installer
+# if [ -e /home/sylvo/.nix-profile/etc/profile.d/nix.sh ]; then . /home/sylvo/.nix-profile/etc/profile.d/nix.sh; fi # added by Nix installer
