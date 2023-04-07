@@ -61,12 +61,12 @@ use({
 --   end
 -- })
 
-use({
-    'folke/tokyonight.nvim',
-    config = function()
-        require('plugins.tokyonight')
-    end
-})
+-- use({
+--     'folke/tokyonight.nvim',
+--     config = function()
+--         require('plugins.tokyonight')
+--     end
+-- })
 
 use ({
     'nyoom-engineering/oxocarbon.nvim',
