@@ -7,9 +7,9 @@ local themee = require('lualine.themes.nightfly')
 
 themee.insert.a.bg = '#2ce65d'
 
-lualine.setup({
-    options = {
-        theme = 'tokyonight'
-    }
-})
+-- lualine.setup({
+--     options = {
+--         theme = 'tokyonight'
+--     }
+-- })
 
